@@ -24,6 +24,9 @@
         --background-color-primary: #1F2C34;
         --background-color-secundary: #121B22;
         --background-color-large: #0c1317; 
+        --background-color-bubble-chat-green: #005C4B;
+        --background-color-bubble-chat-dark: #202C33;
+        --background-color-bobble-date: #1d282f;
     }
 /* globales */
 
@@ -382,11 +385,11 @@ main li{
     .filter-box img{
         width: 15px;
     }
-    main ul::-webkit-scrollbar{
+    ::-webkit-scrollbar{
         -webkit-appearance: none;
-        width: 5px;
+        width: 8px;
     }
-    main ul::-webkit-scrollbar-thumb{
+    ::-webkit-scrollbar-thumb{
         background-color: var(--background-color-primary);
         max-height: 20px;
     }
@@ -509,11 +512,17 @@ main li{
     .interaction-box div:nth-child(3){
         margin: 0px 10px;
     }
-    .chat-box{
+    .chat-box-main{
         height: calc(100% - 120px);
         width: 100%;
         background-image: url(./img/wallpaper.jpg);
         background-size: contain;
+        position: relative;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
     .nav-icon-img-1{
         width: 22px;
@@ -525,6 +534,105 @@ main li{
         opacity: 0.7;
         cursor: pointer;
     }
+    .dow-button{
+        position: fixed;
+        bottom: 75px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+        background: var(--background-color-primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .dow-button img{
+        width: 14px;
+    }
+    .bubble-chat{
+        position: relative;
+        display: flex;
+        max-width: 90%;
+        padding: 8px;
+        border-radius: 8px;
+        margin-bottom: 5px;
+    }
+    .bubble-chat-you{
+        background-color: var(--background-color-bubble-chat-green);
+        margin-bottom: 5px;
+    }
+    .bubble-chat-other{
+        background-color: var(--background-color-bubble-chat-dark);
+        margin-bottom: 5px;
+    }
+    .row-aux{
+        display: flex;
+        justify-content: center;
+    }
+    .row-you{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .row-other{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .date-nofity-box{
+        background: var(--background-color-bobble-date);
+        padding: 8px 10px;
+        border-radius: 10px;
+        margin: 10px 0px;
+    }
+    .date-nofity-box p{
+        color: var(--color-gray);
+        text-transform: uppercase;
+        font-size: .8rem;
+    }
+    .bubble-chat p{
+        color: var(--color-white);
+        z-index: 1;
+    }
+    .bubble-chat .info-box-bubble p{
+        font-size: .7rem;
+        margin: 0px 5px 0px 10px;
+        z-index: 1;
+    }
+    .info-box-bubble{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        z-index: 1;
+    }
+    .change-speeker{
+        margin-bottom: 10px;
+    }
+    .first-speek-you{
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-left: 10px solid var(--background-color-bubble-chat-green);
+        border-bottom: 10px solid var(--background-color-bubble-chat-green);
+        transform: rotate(90deg);
+        top: 0;
+        right: -10px;
+        z-index: 0;
+    }
+    .first-speek-other{
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-left: 10px solid var(--background-color-bubble-chat-dark);
+        border-bottom: 10px solid var(--background-color-bubble-chat-dark);
+        transform: rotate(-180deg);
+        top: 0;
+        left: -10px;
+        z-index: 0;
+    }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -533,7 +641,10 @@ main li{
     }
     .mobile-section{
         width: 30%;
-        min-width: 390px;
+        min-width: 360px;
+    }
+    .bubble-chat{
+        max-width: 80%;
     }
 }
 /* Extra large devices (large laptops and desktops, 1400px and up) */
@@ -548,6 +659,9 @@ main li{
     .mobile-section{
         width: 30%;
     }
+    .bubble-chat{
+        max-width: 70%;
+    }
 }
 /* Extra large devices (large laptops and desktops, 1600px and up) */
 @media only screen and (min-width: 1600px) {
@@ -559,5 +673,8 @@ main li{
     }
     .mobile-section{
         max-width: 480px;
+    }
+    .bubble-chat{
+        max-width: 60%;
     }
 }
