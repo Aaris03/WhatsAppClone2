@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Clone de whatsApp">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>(13) WhatsApp</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,556 +10,573 @@
     <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
     <link rel="icon" type="image/jpg" href="./icon/WhatsApp_icon.ico"/>
+    <link rel="stylesheet" href="./desktop.css" media="(min-width:851px)">
 </head>
 <body> 
     <section class="mobile-section">
-        <header>
-            <section>
-                <div>
-                    <p>WhatsApp</p>
-                </div>
-                <div>
-                    <ul class="action-nav">
-                        <li class="action-box">
-                            <img src="./icon/camara.svg" alt="Tomar foto o video">
+        <section>
+            <header>
+                <section>
+                    <div>
+                        <p>WhatsApp</p>
+                    </div>
+                    <div>
+                        <ul class="action-nav">
+                            <li class="action-box">
+                                <img src="./icon/camara.svg" alt="Tomar foto o video">
+                            </li>
+                            <li class="action-box">
+                                <img src="./icon/lupa.svg" alt="Buscar persona">
+                            </li>
+                            <li class="action-box">
+                                <img src="./icon/menu.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </section> 
+            </header>
+            <section class="views-navs-container">
+                <nav>
+                    <div class="comunity-view-nav">
+                        <img src="./icon/grey-comunity-mobile.svg" alt="Vista de comunidad">
+                    </div>
+                    <ul class="view-navs">
+                        <li class="active-view chats-view-nav">
+                            <p>Chats</p>
+                            <div class="new-messages-circle">
+                                <span>20</span>
+                            </div>
                         </li>
-                        <li class="action-box">
-                            <img src="./icon/lupa.svg" alt="Buscar persona">
+                        <li class="news-view-nav">
+                            <p>Novedades</p>
                         </li>
-                        <li class="action-box">
-                            <img src="./icon/menu.svg" alt="">
+                        <li class="call-view-nav">
+                            <p>Llamadas</p>
                         </li>
                     </ul>
+                </nav> 
+            </section>
+            <section class="headers-box">
+                <section class="nav-header-desktop">
+                    <div class="user-img">
+                        <img src="./img/robert-pattinson.webp" alt="Imagen del usuario activo">
+                    </div>
+                    <div class="icon-nav-aux-box">
+                        <img class="nav-icon-img-1" src="./icon/comunity-icon.svg" alt="">
+                        <img class="nav-icon-img-1" src="./icon/state-active.svg" alt="">
+                        <img class="nav-icon-img-1" src="./icon/canal.svg" alt="">
+                        <img class="nav-icon-img-1" src="./icon/new-chat.svg" alt="">
+                        <img class="nav-icon-img-2" src="./icon/menu-desk.svg" alt="">
+                    </div>
+                </section>
+                <section class="searching-box">
+                    <div class="searching-box-internal">
+                        <div class="search-icon-box">
+                            <img src="./icon/lupa-gray.svg" alt="Icono de lupa">
+                        </div>
+                        <div class="aux-box-input-search">
+                            <label for="searching-chat">
+                                <input type="text" placeholder="Busca un chat o inicio uno nuevo" id="searching-chat">
+                            </label>
+                        </div>
+                        <div class="help-icon">
+                        </div>
+                    </div>
+                    <div class="filter-box">
+                        <img src="./icon/filter.svg" alt="Icono de filtro">
+                    </div>
+                </section>
+            </section>
+            <main>
+                <div class="carousel-aux-box">
+                    <section class="comunity-view">
+                        <p>hola 1</p>
+                    </section>  
+                    <section class="chats-view">
+                        <ul>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/luis-miguel.webp" alt="Imagen de usuario" class="new-state-active">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Luis Miguel</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsum dolor sit</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p class="active-message">21:28</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle">
+                                                <p>999</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/alejandro-sanz.webp" alt="Imagen de usuario" class="new-state-active">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Alejandro Sanz</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p class="active-message">20:42</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="off-silence silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle">
+                                                <p>100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/bruno-mars.webp" alt="Imagen de usuario" class="new-state-active">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Bruno Mars</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur.</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p class="active-message">18:02</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="off-silence silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle">
+                                                <p>13</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/hanna-montana.webp" alt="Imagen de usuario">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Hanna Montana</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsum dolor site natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p>18:00</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="off-silence silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle off-notify">
+                                                <p>999</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/laura-pausini.webp" alt="Imagen de usuario">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Laura Pausini</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsum dolor sit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p>Ayer</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle off-notify">
+                                                <p>999</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/steve-perry.webp" alt="Imagen de usuario" class="new-state-active">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Steve Perry</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p class="active-message">Ayer</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="off-silence silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle">
+                                                <p>1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/vin-disel.webp" alt="Imagen de usuario">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Vin diesel</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p>Miercoles</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle off-notify">
+                                                <p>999</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/kany-garcia.webp" alt="Imagen de usuario">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Kany Garcia</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p>12/12/2023</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="off-silence silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle off-notify">
+                                                <p>999</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/luis-miguel.webp" alt="Imagen de usuario" class="new-state-active">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Luis Miguel</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsum sed.</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p class="active-message">21:28</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle">
+                                                <p>999</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/alejandro-sanz.webp" alt="Imagen de usuario" class="new-state-active">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Alejandro Sanz</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe oluta. Adipisci repellendus non vero sed.</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p class="active-message">20:42</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="off-silence silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle">
+                                                <p>100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/bruno-mars.webp" alt="Imagen de usuario" class="new-state-active">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Bruno Mars</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsumlla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p class="active-message">18:02</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="off-silence silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle">
+                                                <p>13</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/hanna-montana.webp" alt="Imagen de usuario" class="new-state-active">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Hanna Montana</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsum.</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p>18:00</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="off-silence silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle off-notify">
+                                                <p>999</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/laura-pausini.webp" alt="Imagen de usuario" class="new-state-active">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Laura Pausini</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur a.</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p>Ayer</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle off-notify">
+                                                <p>999</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/steve-perry.webp" alt="Imagen de usuario" class="new-state-active">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Steve Perry</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ips</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p class="active-message">Ayer</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="off-silence silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle">
+                                                <p>1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/vin-disel.webp" alt="Imagen de usuario" class="new-state-active">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Vin diesel</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p>Miercoles</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle off-notify">
+                                                <p>999</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li>
+                                <div class="statics-box">
+                                    <img src="./img/kany-garcia.webp" alt="Imagen de usuario" class="new-state-active">
+                                </div>
+                                <div class="border-helper-box">
+                                    <div class="primary-box-contact">
+                                        <div>
+                                            <p class="contact-name wrap-text">Kany Garcia</p>
+                                        </div>
+                                        <div>
+                                            <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
+                                        </div>
+                                    </div>
+                                    <div class="indicator-box">
+                                        <div>
+                                            <p>12/12/2023</p>
+                                        </div>
+                                        <div class="aux-box">
+                                            <div class="off-silence silence-box">
+                                                <img src="./icon/silence.svg" alt="">
+                                            </div>
+                                            <div class="new-messages-circle off-notify">
+                                                <p>999</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                   
+                            </li>
+                            <li class="info-box-aux">
+                                <div>
+                                    <img src="./icon/padlock.svg" alt="Icono de candado">
+                                    <p>Tus mensajes estan <span>cifrados de extremo a extremos.</span></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="news-view">
+                        <p>hola 2</p>
+                    </section>
+                    <section class="call-view">
+                        <p>hola 3</p>
+                    </section>
                 </div>
-            </section> 
-        </header>
-        <section class="views-navs-container">
-            <nav>
+                
+            </main>
+            <div class="new-message-btn">
+                <img src="./icon/new-message.svg" alt="">
+            </div>
+            <div class="info-box-whatsapp">
                 <div>
-                    <img src="./icon/grey-comunity-mobile.svg" alt="Vista de comunidad">
+                    <img src="./icon/whatsapp-logo.svg" alt="WhatsApp-logo">
                 </div>
-                <ul class="view-navs">
-                    <li class="active-view">
-                        <p>Chats</p>
-                        <div class="new-messages-circle">
-                            <span>20</span>
-                        </div>
-                    </li>
-                    <li>
-                        <p>Novedades</p>
-                    </li>
-                    <li>
-                        <p>Llamadas</p>
-                    </li>
-                </ul>
-            </nav> 
-        </section>
-        <section class="headers-box">
-            <section class="nav-header-desktop">
-                <div class="user-img">
-                    <img src="./img/robert-pattinson.jpg" alt="Imagen del usuario activo">
+                <div>
+                    <p>Obtner WhatsApp para Windows ></p>
                 </div>
-                <div class="icon-nav-aux-box">
-                    <img class="nav-icon-img-1" src="./icon/comunity-icon.svg" alt="">
-                    <img class="nav-icon-img-1" src="./icon/state-active.svg" alt="">
-                    <img class="nav-icon-img-1" src="./icon/canal.svg" alt="">
-                    <img class="nav-icon-img-1" src="./icon/new-chat.svg" alt="">
-                    <img class="nav-icon-img-2" src="./icon/menu-desk.svg" alt="">
-                </div>
-            </section>
-            <section class="searching-box">
-                <div class="searching-box-internal">
-                    <div class="search-icon-box">
-                        <img src="./icon/lupa-gray.svg" alt="Icono de lupa">
-                    </div>
-                    <div class="aux-box-input-search">
-                        <label for="searching-chat">
-                            <input type="text" placeholder="Busca un chat o inicio uno nuevo" id="searching-chat">
-                        </label>
-                    </div>
-                    <div class="help-icon">
-                    </div>
-                </div>
-                <div class="filter-box">
-                    <img src="./icon/filter.svg" alt="Icono de filtro">
-                </div>
-            </section>
-        </section>
-        <main>  
-            <ul>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/luis-miguel.jpg" alt="Imagen de usuario" class="new-state-active">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Luis Miguel</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p class="active-message">21:28</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle">
-                                    <p>999</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/alejandro-sanz.jpg" alt="Imagen de usuario" class="new-state-active">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Alejandro Sanz</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p class="active-message">20:42</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="off-silence silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/bruno-mars.jpg" alt="Imagen de usuario" class="new-state-active">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Bruno Mars</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p class="active-message">18:02</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="off-silence silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle">
-                                    <p>13</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/hanna-montana.jpg" alt="Imagen de usuario">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Hanna Montana</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p>18:00</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="off-silence silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle off-notify">
-                                    <p>999</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/laura-pausini.jpg" alt="Imagen de usuario">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Laura Pausini</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p>Ayer</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle off-notify">
-                                    <p>999</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/steve-perry.jpg" alt="Imagen de usuario" class="new-state-active">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Steve Perry</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p class="active-message">Ayer</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="off-silence silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle">
-                                    <p>1</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/vin-disel.jpg" alt="Imagen de usuario">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Vin diesel</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p>Miercoles</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle off-notify">
-                                    <p>999</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/kany-garcia.jpg" alt="Imagen de usuario">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Kany Garcia</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p>12/12/2023</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="off-silence silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle off-notify">
-                                    <p>999</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/luis-miguel.jpg" alt="Imagen de usuario" class="new-state-active">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Luis Miguel</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p class="active-message">21:28</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle">
-                                    <p>999</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/alejandro-sanz.jpg" alt="Imagen de usuario" class="new-state-active">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Alejandro Sanz</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p class="active-message">20:42</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="off-silence silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle">
-                                    <p>100</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/bruno-mars.jpg" alt="Imagen de usuario" class="new-state-active">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Bruno Mars</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p class="active-message">18:02</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="off-silence silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle">
-                                    <p>13</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/hanna-montana.jpg" alt="Imagen de usuario" class="new-state-active">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Hanna Montana</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p>18:00</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="off-silence silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle off-notify">
-                                    <p>999</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/laura-pausini.jpg" alt="Imagen de usuario" class="new-state-active">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Laura Pausini</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p>Ayer</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle off-notify">
-                                    <p>999</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/steve-perry.jpg" alt="Imagen de usuario" class="new-state-active">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Steve Perry</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p class="active-message">Ayer</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="off-silence silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle">
-                                    <p>1</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/vin-disel.jpg" alt="Imagen de usuario" class="new-state-active">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Vin diesel</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p>Miercoles</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle off-notify">
-                                    <p>999</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li>
-                    <div class="statics-box">
-                        <img src="./img/kany-garcia.jpg" alt="Imagen de usuario" class="new-state-active">
-                    </div>
-                    <div class="border-helper-box">
-                        <div class="primary-box-contact">
-                            <div>
-                                <p class="contact-name wrap-text">Kany Garcia</p>
-                            </div>
-                            <div>
-                                <p class="conversation-text wrap-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae saepe quasi facilis consequatur tempora ut atque adipisci nulla velit, natus id cupiditate, placeat soluta. Adipisci repellendus non vero sed.</p>
-                            </div>
-                        </div>
-                        <div class="indicator-box">
-                            <div>
-                                <p>12/12/2023</p>
-                            </div>
-                            <div class="aux-box">
-                                <div class="off-silence silence-box">
-                                    <img src="./icon/silence.svg" alt="">
-                                </div>
-                                <div class="new-messages-circle off-notify">
-                                    <p>999</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </li>
-                <li class="info-box-aux">
-                    <div>
-                        <img src="./icon/padlock.svg" alt="Icono de candado">
-                        <p>Tus mensajes estan <span>cifrados de extremo a extremos.</span></p>
-                    </div>
-                </li>
-            </ul>
-        </main>
-        <div class="new-message-btn">
-            <img src="./icon/new-message.svg" alt="">
-        </div>
-        <div class="info-box-whatsapp">
-            <div>
-                <img src="./icon/whatsapp-logo.svg" alt="WhatsApp-logo">
+                <div></div>
             </div>
-            <div>
-                <p>Obtner WhatsApp para Windows ></p>
-            </div>
-            <div></div>
-        </div>
+        </section>
     </section>
     <section class="desktop-section">
         <header class="nav-header-desktop">
             <div class="user-in-chat">
-                <img src="./img/bruno-mars.jpg" alt="Imagen de usario activo en conversacion">
+                <img src="./img/bruno-mars.webp" alt="Imagen de usario activo en conversacion">
                 <div class="contact-user-info">
                     <p class="contact-name wrap-text">Bruno Mars</p>
                     <p class="aux-tex-1 wrap-text">haz clic aqui para ver informacion de contacto</p>

@@ -1,0 +1,422 @@
+/* Small devices (portrait tablets and large phones, 851px and up) */
+@media only screen and (min-width: 851px) {
+    body{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .mobile-section{
+        width: 45%;
+        border-right: 1px solid var(--color-gray-opacity);
+        position: relative;
+    }
+    main li{
+        height: 72px;
+    }
+    .new-message-btn,
+    .views-navs-container,
+    .info-box-aux div,
+    header,
+    .info-box-aux{
+        display: none;
+    }
+    .info-box-whatsapp{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+    }
+    .aux-box-input-search label{
+        width: 100%;
+    }
+    .info-box-whatsapp{
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: var(--background-color-secundary);
+        border-top: 1px solid var(--color-gray-opacity);
+        border-right: 1px solid var(--color-gray-opacity);
+    }
+    .info-box-whatsapp p{
+        color: var(--color-green);
+        font-size: 1.1rem;
+    }
+    .info-box-whatsapp div:nth-child(1){
+        width: 50px;
+    }
+    .info-box-whatsapp div:nth-child(1) img{
+        width: 75%;
+    }
+    .searching-box{
+        height: 50px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        background-color: var(--background-color-secundary);
+    }
+    .headers-box{
+        position: sticky;
+        top: 0;
+    }
+    .nav-header-desktop{
+        height: 60px;
+        width: 100%;
+        background-color: var(--background-color-primary);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+    .searching-box-internal{
+        display: flex;
+        width: 100%;
+        background-color: var(--background-color-primary);
+        height: 75%;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    .filter-box{
+        width: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-icon-box{
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-icon-box img{
+        width: 15px;
+    }
+    .aux-box-input-search{
+        display: flex;
+        width: calc(100% - 60px);
+        align-items: center;
+    }
+    .aux-box-input-search input{
+        width: 95%;
+        background: transparent;
+        border: none;
+        color: white;
+        outline: none;
+    }
+    .help-icon{
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-gray);
+    }
+    main ul{
+        height: calc(100vh - 190px);
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .info-box-whatsapp div:nth-child(1){
+        display: flex;
+    }
+    .info-box-whatsapp div:nth-child(2){
+        padding-left: 10px;
+    }
+    .filter-box img{
+        width: 15px;
+    }
+    ::-webkit-scrollbar{
+        -webkit-appearance: none;
+        width: 8px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: var(--background-color-primary);
+        max-height: 20px;
+    }
+    main ul li:hover{
+        background-color: var(--background-color-primary);
+    } 
+    .user-img img,
+    .user-in-chat img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .icon-nav-aux-box, 
+    .icon-nav-aux-box-1, 
+    .video-option, 
+    .icon-nav-aux-box-1 div,
+    .interaction-box div,
+    .user-in-chat{
+        display: flex;
+        align-items: center;
+    }
+    .user-in-chat{
+        width: calc(100% - 250px);
+    }
+    .contact-user-info{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 18px;
+        width: 100%;
+    }
+    .aux-tex-1{
+        color: var(--color-gray);
+        font-size: .8rem;
+    }
+    .video-option{
+        padding: 8px 12px;
+    }
+    .icon-nav-aux-box-1{
+        margin: 0px 15px;
+        width: 220px;
+    }
+    .icon-nav-aux-box-1 div{
+        margin-left: 20px;
+        cursor: pointer;
+        min-width: 40px;
+        min-height: 40px;
+        justify-content: center;
+    }
+    .icon-nav-aux-box img{
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    .video-option img:nth-child(1){
+        width: 24px;
+        height: 24px;
+    }
+    .video-option img:nth-child(2){
+        width: 12px;
+        margin-left: 10px;
+    }
+    .video-option img{
+        opacity: .3;
+    }
+    .search-in-chat img{
+        width: 18px;
+    }
+    .menu-in-chat:active,
+    .search-in-chat:active{
+        background-color: var(--color-gray-opacity);
+        border-radius: 50%;
+    }
+    .video-option:active{
+        background-color: var(--color-gray-opacity);
+        border-radius: 20px;
+    }
+    .border-helper-box{
+        border-bottom: 1px solid var(--color-gray-opacity);
+    }
+    .desktop-section{
+        width: 55%;
+        height: 100%;
+        position: relative;
+    }
+    .interaction-box{
+        position: absolute;
+        bottom: 0;
+        background-color: var(--background-color-primary);
+        height: 60px;
+        width: 100%;
+        display: flex;
+        padding: 0px 10px;
+    }
+    .interaction-box div:nth-child(1) div:nth-child(1){
+        width: 30px;
+        margin-left: 15px;
+    }
+    .interaction-box div:nth-child(1) div:nth-child(2){
+        width: 30px;
+        margin-left: 5px;
+    }
+    .interaction-box div:nth-child(2){
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .interaction-box div:nth-child(2) input{
+        width: 100%;
+        background: #2a3942;
+        outline: none;
+        border: none;
+        height:40px;
+        border-radius: 5px;
+        color: white;
+        padding: 15px;
+    }
+    ::placeholder{
+        color: var(--color-gray);
+        font-size: 1rem;
+    }
+    .interaction-box div:nth-child(3){
+        margin: 0px 10px;
+    }
+    .chat-box-main{
+        position: relative;
+        height: calc(100% - 120px);
+        width: 100%;
+        background-image: url(./img/wallpaper.webp);
+        background-size: contain;  
+    }
+    .chat-box-aux{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding: 10px 20px;
+    }
+    .nav-icon-img-1{
+        width: 22px;
+    }
+    .nav-icon-img-2{
+        height: 15px;
+    }
+    .interaction-box img{
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    .dow-button{
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+        background: var(--background-color-primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .dow-button img{
+        width: 14px;
+    }
+    .bubble-chat{
+        position: relative;
+        display: flex;
+        max-width: 90%;
+        padding: 8px;
+        border-radius: 8px;
+        margin-bottom: 5px;
+    }
+    .bubble-chat-you{
+        background-color: var(--background-color-bubble-chat-green);
+        margin-bottom: 5px;
+    }
+    .bubble-chat-other{
+        background-color: var(--background-color-bubble-chat-dark);
+        margin-bottom: 5px;
+    }
+    .row-aux{
+        display: flex;
+        justify-content: center;
+    }
+    .row-you{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .row-other{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .date-nofity-box{
+        background: var(--background-color-bobble-date);
+        padding: 8px 10px;
+        border-radius: 10px;
+        margin: 10px 0px;
+    }
+    .date-nofity-box p{
+        color: var(--color-gray);
+        text-transform: uppercase;
+        font-size: .8rem;
+    }
+    .bubble-chat p{
+        color: var(--color-white);
+        z-index: 1;
+    }
+    .bubble-chat .info-box-bubble p{
+        font-size: .7rem;
+        margin: 0px 5px 0px 10px;
+        z-index: 1;
+    }
+    .info-box-bubble{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        z-index: 1;
+    }
+    .change-speeker{
+        margin-bottom: 10px;
+    }
+    .first-speek-you{
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-left: 10px solid var(--background-color-bubble-chat-green);
+        border-bottom: 10px solid var(--background-color-bubble-chat-green);
+        transform: rotate(90deg);
+        top: 0;
+        right: -10px;
+        z-index: 0;
+    }
+    .first-speek-other{
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-left: 10px solid var(--background-color-bubble-chat-dark);
+        border-bottom: 10px solid var(--background-color-bubble-chat-dark);
+        transform: rotate(-180deg);
+        top: 0;
+        left: -10px;
+        z-index: 0;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .desktop-section{
+        width: 70%;
+    }
+    .mobile-section{
+        width: 30%;
+        min-width: 360px;
+    }
+    .bubble-chat{
+        max-width: 80%;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+    body{
+        padding: 20px;
+        background-color: var(--background-color-large);
+    }
+    .desktop-section{
+        width: 70%;
+    }
+    .mobile-section{
+        width: 30%;
+    }
+    .bubble-chat{
+        max-width: 70%;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1600px and up) */
+@media only screen and (min-width: 1600px) {
+    body{
+        padding: 20px;
+    }
+    .desktop-section{
+        max-width: 1100px;
+    }
+    .mobile-section{
+        max-width: 480px;
+    }
+    .bubble-chat{
+        max-width: 60%;
+    }
+}
