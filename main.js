@@ -135,11 +135,7 @@ mainUser.contacts.push(
 
 mainUser.initPrevChat();
 
-console.log(mainUser)
-
 /** Variables auxiliares */
-
-let navNewView = false;
 
 /** Selectores de elementos */
 
@@ -157,6 +153,16 @@ navChatsViewElement.addEventListener("click",activeView)
 navCallViewElement.addEventListener("click",activeView)
 navComunityViewElement.addEventListener("click",activeView)
 
+/** 
+ * Reiniciamos la posicion de la caja de los contactos al cambiar a la modalidad desktop
+ */
+
+window.addEventListener("resize", ()=>{
+    if(this.innerWidth>= 851){
+        carouselBox.style.translate = "0";
+    }
+})
+
 
 /** 
  * activeView se encarga de buscar al elemento que tenga por default la clase .active-view; Se la quita y luego busca que vista que se quiere activar, para añadir la misma clase y mostrar visualmente la vista activa
@@ -172,13 +178,20 @@ function activeView(){
         comunityNavImg.setAttribute("src","./icon/grey-comunity-mobile.svg")
         navComunityViewElement.removeAttribute("style")
     }
+    window.scroll(0,0)
 
-    this.classList.add("active-view")
-    moveView(this)
+    this.classList.add("active-view");
+    
+    moveView(this);
 }
 
+/**
+ * moveView desplaza el contenedor carusel para cambiar de vista de forma dinamica, segun el nav seleccionado.
+ * @param {Object} view es el objeto que inicializa el evento de click
+ * Se revisa la clase que contiene para saber a que vista se debe ir y se compara con el objeto carouselIndex para saber cuantos pixeles se debe mover el contenedor.
+ */
 function moveView(view){
-    console.log(view)
+    
     const carouselIndex = {
         "comunity-view": "100%",
         "chats-view": "0",
@@ -195,5 +208,4 @@ function moveView(view){
     }else if (view.classList.contains("call-view-nav")){
         carouselBox.style.translate = carouselIndex["call-view"]
     }
-
 }

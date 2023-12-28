@@ -17,7 +17,10 @@
     .views-navs-container,
     .info-box-aux div,
     header,
-    .info-box-aux{
+    .info-box-aux,
+    .comunity-view,
+    .news-view,
+    .call-view{
         display: none;
     }
     .info-box-whatsapp{
